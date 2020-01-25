@@ -49,7 +49,7 @@ body {
 	font-weight: 900;
 	font-family: 'Product Sans2', sans-serif;
 }
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 395px) {
   #time {
 	font-size: 80px;
 }
