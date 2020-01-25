@@ -6,4 +6,4 @@
 
 ## 📦 The Project
 
-If you want to edit and adapt it, you only need the index.html and the cover.css.
+If you want to edit it, you only need to adapt the index.html and the cover.css.
