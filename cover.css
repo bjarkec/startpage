@@ -1,0 +1,176 @@
+/*
+ * Globals
+ */
+
+@font-face {
+  font-family: 'Product Sans1';
+  src: url('Product Sans Regular.ttf')  format('truetype'); 
+}
+@font-face {
+  font-family: 'Product Sans2';
+  src: url('Product Sans Bold.ttf')  format('truetype'); 
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #202124;
+  font-family: 'Product Sans1', sans-serif;
+  font-weight: 400;
+  
+}
+
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  margin: auto;
+  color: #fff;
+}
+
+#time {
+	color: white;
+	font-size: 100px;
+	padding-bottom: 80px;
+	font-weight: 900;
+	font-family: 'Product Sans2', sans-serif;
+}
+
+.cover-container {
+  width: 72em;
+}
+
+.quicklinks {
+	width: 100%;
+	margin: auto 0;
+}
+
+button, input, optgroup, select, textarea {
+    line-height: 2.2;
+}
+
+.search {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 32em !important;
+    height: 48px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: #131313;
+    border-color: #131313;
+    outline: none;
+    box-shadow: none;
+    border-width: 0px;
+	color: white;
+	font-size: 20px;
+	margin-bottom: 110px;
+}
+
+@media only screen and (max-width: 768px) {
+  .search  {
+    margin-bottom: 50px;
+  }
+  #time {
+	padding-bottom: 30px;
+}
+}
+
+input {
+	width: 80%;
+	background-color: transparent;
+	margin-left: 20px;
+	outline: none;
+    border-width: 0px;
+	color: white;
+	font-size: 20px;
+	font-family: 'Product Sans1', sans-serif;
+	font-weight: 400;
+	float: left;
+}
+button {
+	width: 16%;
+	height: 48px;
+    background-color: transparent;
+    outline: none;
+    border-width: 0px;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+	float:right;
+}
+@media only screen and (max-width: 585px) {
+  button {
+    width: 12%;
+  }
+}
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
+}
+
+.divider {
+	border-bottom: 1px solid white;
+	margin-bottom: 30px;
+}
+.quicklinks {
+	float:left;
+}
+.link img {
+	height: 36px;
+}
+.link a {
+    line-height: 1.85rem;
+}
+.daily, .streaming, .custom {
+	float:left;
+}
+.creative {
+	float:left;
+}
+.link {
+	margin-right: 20px;
+	float:left;
+}
+.text {
+	text-decoration: none;
+	display: flex;
+    position: relative;
+	line-height: 2.1rem;
+	margin-bottom: 15px;
+	float:left;
+    font-size: 0.9rem;
+}
+.text:active, .text:focus, .text:hover, .text:visited, .text {
+	text-decoration: none;
+	color: white;
+}
+h3 {
+	color: white;
+	margin-bottom: 10px;
+	text-align: left;
+	font-size: 20px;
+}
+.dark-mode-h3 {
+	color: #202124;
+}
+
+
+/*
+ * Footer
+ */

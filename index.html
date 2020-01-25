@@ -1,23 +1,39 @@
 <!DOCTYPE html>
-<head>
-	<link rel="stylesheet" type="text/css" href="style.css">
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.0/examples/cover/ -->
+<html lang="de"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 	<script src="https://kit.fontawesome.com/769d5a10c2.js" crossorigin="anonymous"></script>
-	<script src="script.js"></script>
-</head>
+    <title>Home</title>
 
-<body onLoad="initClock()">
-	<div class="parent">
-		<div class="searchfield">
-			<div id="time">
-				<a id="h">12</a> :
-				<a id="m">00</a>
-			</div>
-			<form action="https://www.google.com/search" method="get" class="search" target="_blank">
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center" onLoad="initClock()">
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <div class="mb-auto"></div>
+
+      <main role="main" class="inner cover">
+        <div id="time">
+			<a id="h">12</a> :
+			<a id="m">00</a>
+		</div>
+		<div class="search">
+		<form action="https://www.google.com/search" method="get" target="_blank">
 				<input type="text" name="q" placeholder="Search with google.com">
 				<button type="search" name="q"><i class="fas fa-search"></i></button>
-			</form>
-			<div class="quicklinks">
-		<div class="daily">
+		</form>
+		</div>
+		<div class="quicklinks">
+        <div class="daily col-lg-3 col-md-3 col-6">
 			<h3>DAILY</h3>
 			<div class="divider"></div>
 			<a href="https://www.youtube.com/" target="_blank"><div class="link"><img src="icons/youtube.png"></div><div class="text">Youtube</div></a><br><br>
@@ -25,33 +41,43 @@
 			<a href="https://www.netflix.com/browse" target="_blank"><div class="link"><img src="icons/netflix.png"></div><div class="text">Netflix</div></a><br><br>
 			<a href="https://www.suedkurier.de/" target="_blank"><div class="link"><img src="icons/sk.png"></div><div class="text">Südkurier</div></a><br><br>
 		</div>
-		<div class="streaming">
+		<div class="streaming col-lg-3 col-md-3 col-6">
 			<h3>STREAMING</h3>
 			<div class="divider"></div>
-			<a href="https://serienstream.sx/" target="_blank"><div class="link"><img src="icons/play.png"></div><div class="text">Serienstream</div></a><br><br>
+			<a href="https://serienstream.sx/" target="_blank"><div class="link"><img src="icons/play.png"></div><div class="text">Stream</div></a><br><br>
 			<a href="https://www.amazon.de/Prime-Video/b?ie=UTF8&node=3279204031" target="_blank"><div class="link"><img src="icons/amazon.png"></div><div class="text">Prime</div></a><br><br>
 			<a href="https://www.tvnow.de/" target="_blank"><div class="link"><img src="icons/play.png"></div><div class="text">TVNow</div></a><br><br>
 			<a href="https://www.twitch.tv/" target="_blank"><div class="link"><img src="icons/twitch.png"></div><div class="text">Twitch</div></a><br><br>
 		</div>
-		<div class="custom">
+		<div class="custom col-lg-3 col-md-3 col-6">
 			<h3>CUSTOM</h3>
 			<div class="divider"></div>
 			<a href="https://www.amazon.de/" target="_blank"><div class="link"><img src="icons/amazon.png"></div><div class="text">Amazon</div></a><br><br>
-			<a href="https://stackoverflow.com/" target="_blank"><div class="link"><img src="icons/stackoverflow.png"></div><div class="text">Stack Overflow</div></a><br><br>
+			<a href="https://stackoverflow.com/" target="_blank"><div class="link"><img src="icons/stackoverflow.png"></div><div class="text">Stack</div></a><br><br>
 			<a href="https://www.reddit.com/" target="_blank"><div class="link"><img src="icons/reddit.png"></div><div class="text">Reddit</div></a><br><br>
 			<a href="https://www.instagram.com/" target="_blank"><div class="link"><img src="icons/insta.png"></div><div class="text">Instagram</div></a><br><br>
 		</div>
-		<div class="creative">
+		<div class="creative col-lg-3 col-md-3 col-6">
 			<h3>CREATIVE</h3>
 			<div class="divider"></div>
-			<a href="https://themeforest.net/" target="_blank"><div class="link"><img src="icons/wordpress.png"></div><div class="text">Themeforest</div></a><br><br>
+			<a href="https://themeforest.net/" target="_blank"><div class="link"><img src="icons/wordpress.png"></div><div class="text">Tforest</div></a><br><br>
 			<a href="https://de.freepik.com/" target="_blank"><div class="link"><img src="icons/freepik.png"></div><div class="text">Freepik</div></a><br><br>
 			<a href="https://codepen.io/" target="_blank"><div class="link"><img src="icons/html5.png"></div><div class="text">Codepen</div></a><br><br>
 			<a href="https://unsplash.com/" target="_blank"><div class="link"><img src="icons/unsplash.png"></div><div class="text">Unsplash</div></a><br><br>
-		</div>
-		</div>
-		</div>
-	</div>
-</body>
+		</div></div>
+      </main>
 
-</html>
+      <div class="mt-auto"></div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="jquery-3.2.1.slim.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  
+
+</body></html>
