@@ -16,3 +16,9 @@ function initClock() {
   window.setInterval("updateClock()", 1000);
 }
 
+$(document).keyup(function(e) {
+     if (e.key === "Escape") { // escape key maps to keycode `27`
+        var hex = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+		document.body.style.background = hex;
+    }
+});
