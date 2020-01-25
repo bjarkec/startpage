@@ -49,6 +49,11 @@ body {
 	font-weight: 900;
 	font-family: 'Product Sans2', sans-serif;
 }
+@media only screen and (max-width: 370px) {
+  #time {
+	font-size: 80px;
+}
+}
 
 .cover-container {
   width: 82em;
@@ -139,9 +144,11 @@ button {
 }
 .daily, .streaming, .custom {
 	float:left;
+	margin-bottom: 40px;
 }
 .creative {
 	float:left;
+	margin-bottom: 40px;
 }
 .link {
 	margin-right: 20px;
