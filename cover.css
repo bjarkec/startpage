@@ -127,6 +127,18 @@ button {
   }
 }
 
+@media only screen and (max-width: 330px) {
+  button {
+    width: 10%;
+  }
+}
+
+@media only screen and (max-width: 284px) {
+  button {
+    width: 8%;
+  }
+}
+
 /*
  * Cover
  */
