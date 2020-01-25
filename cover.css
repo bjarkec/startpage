@@ -54,6 +54,11 @@ body {
 	font-size: 80px;
 }
 }
+@media only screen and (max-width: 334px) {
+  #time {
+	font-size: 60px;
+}
+}
 
 .cover-container {
   width: 82em;
@@ -154,6 +159,7 @@ button {
 	margin-right: 20px;
 	float:left;
 }
+
 .text {
 	text-decoration: none;
 	display: flex;
@@ -167,6 +173,16 @@ button {
 	text-decoration: none;
 	color: white;
 }
+
+@media only screen and (max-width: 355px) {
+  .link {
+    float: none;
+  }
+  .text {
+    float: none;
+  }
+}
+
 h3 {
 	color: white;
 	margin-bottom: 10px;
