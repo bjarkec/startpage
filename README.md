@@ -1,19 +1,10 @@
-# 
-<h1 align="left">
-   Startpage for r/startpages
-</h1>
-<br>
+# My startpage
 
-## 📦 The Project
+This project contains the souce code for my startpage.
 
-If you want to edit it, you only need to adapt the index.html and the cover.css.
+The original project is a fork of Tobias Stroch's startpage, which can be found [here](https://github.com/Tobias-Schoch/startpage "Tobias Stroch's startpage").
 
-## 🖥 Demo
+## TODO
 
-http://schoch.space/startpage
-
-## 🔑 Easter Egg
-
-Press "Escape" as often as you want.
-To reset press "Insert"
-
+* New font (Helvetica?)
+* Current date above clock
