@@ -111,7 +111,7 @@ input {
 	float: left;
 }
 button {
-	width: 16%;
+	width: 50px;
 	height: 48px;
     background-color: transparent;
     outline: none;
@@ -159,14 +159,11 @@ button {
 .link a {
     line-height: 1.85rem;
 }
-.daily, .streaming, .custom {
+.daily, .streaming, .custom, .creative {
 	float:left;
 	margin-bottom: 40px;
 }
-.creative {
-	float:left;
-	margin-bottom: 40px;
-}
+
 .link {
 	margin-right: 20px;
 	float:left;
