@@ -5,10 +5,9 @@ Number.prototype.pad = function(n) {
 function updateClock() {
   var now = new Date();
   var min = now.getMinutes(),
-    hou = now.getHours(),
-    sec = now.getSeconds();
-  var tags = ["h", "m", "s"],
-    corr = [hou.pad(2), min.pad(2), sec.pad(2)];
+    hou = now.getHours();
+  var tags = ["h", "m"],
+    corr = [hou.pad(2), min.pad(2)];
   for (var i = 0; i < tags.length; i++)
     document.getElementById(tags[i]).firstChild.nodeValue = corr[i];
 }
