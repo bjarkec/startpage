@@ -6,5 +6,7 @@ The original project is a fork of Tobias Stroch's startpage, which can be found 
 
 ## TODO
 
+* Fix searchbar
+* Fix searchbar color
 * New font (Helvetica?)
 * Current date above clock
