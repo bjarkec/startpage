@@ -13,7 +13,19 @@ function updateClock() {
 		document.getElementById(tags[i]).firstChild.nodeValue = corr[i];
 }
 
+function updateDate() {
+  var now = new Date();
+	var day = now.getUTCDate()
+  var month = now.getUTCMonth();
+  var year = now.getUTCFullYear();
+	var tagsdate = ["day", "month", "year"];
+	var corrdate = [day.pad(2), month.pad(2), year.pad(4)];
+	for (var i = 0; i < tagsdate.length; i++)
+		document.getElementById(tagsdate[i]).firstChild.nodeValue = corrdate[i];
+}
+
 function initClock() {
+  updateDate();
 	updateClock();
 	window.setInterval("updateClock()", 1000);
 }

@@ -27,6 +27,12 @@ body {
   margin: auto;
   color: #fff;
 }
+#date {
+  color: white;
+  font-size: 55px;
+  font-weight: 900;
+  font-family: 'Product Sans2', sans-serif;
+}
 #time {
   color: white;
   font-size: 85px;
