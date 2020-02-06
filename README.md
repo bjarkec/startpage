@@ -6,4 +6,4 @@ The original project is a fork of Tobias Stroch's startpage, which can be found 
 
 ## TODO
 
-* Current date above clock
+* Add weather forecast
