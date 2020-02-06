@@ -16,7 +16,7 @@ function updateClock() {
 function updateDate() {
   var now = new Date();
 	var day = now.getUTCDate()
-  var month = now.getUTCMonth();
+  var month = now.getUTCMonth()+1;
   var year = now.getUTCFullYear();
 	var tagsdate = ["day", "month", "year"];
 	var corrdate = [day.pad(2), month.pad(2), year.pad(4)];
