@@ -1,84 +1,122 @@
 <!DOCTYPE html>
 <!-- saved from url=(0049)https://getbootstrap.com/docs/4.0/examples/cover/ -->
-<html lang="de"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-	<script src="https://kit.fontawesome.com/769d5a10c2.js" crossorigin="anonymous"></script>
-    <title>Homepage</title>
-
-
-    <!-- Bootstrap core CSS -->
-    <link href="bootstrap.min.css?version=4" rel="stylesheet">
-	<script src="jquery-3.2.1.slim.min.js?version=4"></script>
-	<script>
-		console.log(localStorage.getItem('background'));
-		
-	</script>
-    <!-- Custom styles for this template -->
-    <link href="cover.css?version=4" rel="stylesheet">
-  </head>
-
-  <body class="text-center" onLoad="initClock()">
-
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-      <div class="mb-auto"></div>
-
-      <main role="main" class="inner cover">
-        <div id="time">
-			<a id="h">12</a> :
-			<a id="m">00</a>
-		</div>
-		<div class="search">
-			<form method="get" action="https://duckduckgo.com/">
-				<input size="40" name="q" placeholder="Search with DuckDuckGo">
-				<button type="search" name="q"><i class="fas fa-search"></i></button>
-			</form>
-		</div>
-		<div class="quicklinks">
-        	<div class="daily col-lg-3 col-md-3 col-6">
-				<h3>Entertainment</h3>
-				<div class="divider"></div>
-				<a href="https://www.youtube.com/" target="_blank"><div class="link"><img src="icons/youtube.png"></div><div class="text">Youtube</div></a><br><br>
-				<a href="https://www.twitch.tv/" target="_blank"><div class="link"><img src="icons/twitch.png"></div><div class="text">Twitch</div></a><br><br>
-				<a href="https://dk.hbonordic.com/" target="_blank"><div class="link"><img src="icons/hbo.png"></div><div class="text">HBO Nordic</div></a><br><br>
-			</div>
-			<div class="daily col-lg-3 col-md-3 col-6">
-				<h3>Music</h3>
-				<div class="divider"></div>
-				<a href="https://open.spotify.com/" target="_blank"><div class="link"><img src="icons/spotify.png"></div><div class="text">Spotify</div></a><br><br>
-				<a href="https://soundcloud.com/" target="_blank"><div class="link"><img src="icons/soundcloud.png"></div><div class="text">Soundcloud</div></a><br><br>			
-			</div>
-			<div class="daily col-lg-3 col-md-3 col-6">
-				<h3>Reddit</h3>
-				<div class="divider"></div>
-				<a href="https://www.reddit.com/" target="_blank"><div class="link"><img src="icons/reddit.png"></div><div class="text">Reddit Homepage</div></a><br><br>
-				<a href="https://www.reddit.com/r/unixporn/" target="_blank"><div class="link"><img src="icons/arch.png"></div><div class="text">Unixporn</div></a><br><br>
-				<a href="https://www.reddit.com/r/denmark/" target="_blank"><div class="link"><img src="icons/denmark.png"></div><div class="text">Denmark</div></a><br><br>
-				<a href="https://www.reddit.com/r/okbuddyretard/" target="_blank"><div class="link"><img src="icons/okaybuddyretard.png"></div><div class="text">Okbuddyretard</div></a><br><br>
-			</div>
-			<div class="daily col-lg-3 col-md-3 col-6">
-				<h3>Social Media</h3>
-				<div class="divider"></div>
-				<a href="https://www.facebook.com/" target="_blank"><div class="link"><img src="icons/facebook.png"></div><div class="text">Facebook</div></a><br><br>
-				<a href="https://www.instagram.com/" target="_blank"><div class="link"><img src="icons/instagram.png"></div><div class="text">Instagram</div></a><br><br>
-				<a href="https://twitter.com/home" target="_blank"><div class="link"><img src="icons/twitter.png"></div><div class="text">Twitter</div></a><br><br>
-			</div>
-		</div>
-      </main>
-
-      <div class="mt-auto"></div>
-    </div>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    
-    <script src="popper.min.js"></script>
-    <script src="bootstrap.min.js"></script>
-    <script src="script.js?version=4"></script>
-  
-
-</body></html>
+<html lang="de">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <script src="https://kit.fontawesome.com/769d5a10c2.js" crossorigin="anonymous"></script>
+      <title>Homepage</title>
+      <!-- Bootstrap core CSS -->
+      <link href="bootstrap.min.css?version=4" rel="stylesheet">
+      <script src="jquery-3.2.1.slim.min.js?version=4"></script>
+      <script>
+         console.log(localStorage.getItem('background'));
+         
+      </script>
+      <!-- Custom styles for this template -->
+      <link href="cover.css?version=4" rel="stylesheet">
+   </head>
+   <body class="text-center" onLoad="initClock()">
+      <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+         <div class="mb-auto"></div>
+         <main role="main" class="inner cover">
+            <div id="time">
+               <a id="h">12</a> :
+               <a id="m">00</a>
+            </div>
+            <div class="search">
+               <form method="get" action="https://duckduckgo.com/">
+                  <input size="40" name="q" placeholder="Search with DuckDuckGo">
+               </form>
+            </div>
+            <div class="quicklinks">
+               <div class="daily col-lg-3 col-md-3 col-6">
+                  <h3>Entertainment</h3>
+                  <div class="divider"></div>
+                  <a href="https://www.youtube.com/" target="_blank">
+                     <div class="link"><img src="icons/youtube.png"></div>
+                     <div class="text">Youtube</div>
+                  </a>
+                  <br><br>
+                  <a href="https://www.twitch.tv/" target="_blank">
+                     <div class="link"><img src="icons/twitch.png"></div>
+                     <div class="text">Twitch</div>
+                  </a>
+                  <br><br>
+                  <a href="https://dk.hbonordic.com/" target="_blank">
+                     <div class="link"><img src="icons/hbo.png"></div>
+                     <div class="text">HBO Nordic</div>
+                  </a>
+                  <br><br>
+               </div>
+               <div class="daily col-lg-3 col-md-3 col-6">
+                  <h3>Music</h3>
+                  <div class="divider"></div>
+                  <a href="https://open.spotify.com/" target="_blank">
+                     <div class="link"><img src="icons/spotify.png"></div>
+                     <div class="text">Spotify</div>
+                  </a>
+                  <br><br>
+                  <a href="https://soundcloud.com/" target="_blank">
+                     <div class="link"><img src="icons/soundcloud.png"></div>
+                     <div class="text">Soundcloud</div>
+                  </a>
+                  <br><br>			
+               </div>
+               <div class="daily col-lg-3 col-md-3 col-6">
+                  <h3>Reddit</h3>
+                  <div class="divider"></div>
+                  <a href="https://www.reddit.com/" target="_blank">
+                     <div class="link"><img src="icons/reddit.png"></div>
+                     <div class="text">Reddit Homepage</div>
+                  </a>
+                  <br><br>
+                  <a href="https://www.reddit.com/r/unixporn/" target="_blank">
+                     <div class="link"><img src="icons/arch.png"></div>
+                     <div class="text">Unixporn</div>
+                  </a>
+                  <br><br>
+                  <a href="https://www.reddit.com/r/denmark/" target="_blank">
+                     <div class="link"><img src="icons/denmark.png"></div>
+                     <div class="text">Denmark</div>
+                  </a>
+                  <br><br>
+                  <a href="https://www.reddit.com/r/okbuddyretard/" target="_blank">
+                     <div class="link"><img src="icons/okaybuddyretard.png"></div>
+                     <div class="text">Okbuddyretard</div>
+                  </a>
+                  <br><br>
+               </div>
+               <div class="daily col-lg-3 col-md-3 col-6">
+                  <h3>Social Media</h3>
+                  <div class="divider"></div>
+                  <a href="https://www.facebook.com/" target="_blank">
+                     <div class="link"><img src="icons/facebook.png"></div>
+                     <div class="text">Facebook</div>
+                  </a>
+                  <br><br>
+                  <a href="https://www.instagram.com/" target="_blank">
+                     <div class="link"><img src="icons/instagram.png"></div>
+                     <div class="text">Instagram</div>
+                  </a>
+                  <br><br>
+                  <a href="https://twitter.com/home" target="_blank">
+                     <div class="link"><img src="icons/twitter.png"></div>
+                     <div class="text">Twitter</div>
+                  </a>
+                  <br><br>
+               </div>
+            </div>
+         </main>
+         <div class="mt-auto"></div>
+      </div>
+      <!-- Bootstrap core JavaScript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="popper.min.js"></script>
+      <script src="bootstrap.min.js"></script>
+      <script src="script.js?version=4"></script>
+   </body>
+</html>
