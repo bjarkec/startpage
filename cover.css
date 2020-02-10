@@ -36,7 +36,7 @@ body {
 #time {
   color: white;
   font-size: 85px;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
   font-weight: 900;
   font-family: 'Product Sans2', sans-serif;
 }
@@ -73,8 +73,15 @@ button, input, optgroup, select, textarea {
   border-width: 0px;
   color: white;
   font-size: 20px;
-  margin-bottom: 110px;
+  margin-bottom: 50px;
 }
+.weatherwidget-io {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  width: 40%;
+}
+
 @media only screen and (max-width: 768px) {
   .search {
       margin-bottom: 50px;
