@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Use the XMLHttpRequest to get the content of a file.</h2>
+<p>The content is written in JSON format, and can easily be converted into a JavaScript object.</p>
+
+<p id="cityName"></p>
+
+<p id="currentTemp"></p>
+<p id="currentTempFeelsLike"></p>
+<p id="pressure"></p>
+<p id="humidity"></p>
+
+<p id="windSpeed"></p>
+<p id="windDegrees"></p>
+
+<p id="cloudCover"></p>
+
+<script>
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var weather = JSON.parse(this.responseText);
+    document.getElementById("cityName").innerHTML = weather.name;
+
+    document.getElementById("currentTemp").innerHTML = "Current temperature: " + weather.main.temp + " °C";
+    document.getElementById("currentTempFeelsLike").innerHTML = "Feels like: " + weather.main.feels_like + " °C";
+    document.getElementById("pressure").innerHTML = "Pressure: " + weather.main.pressure + " hPa";
+    document.getElementById("humidity").innerHTML = "Humidity: " + weather.main.humidity + " %";
+
+    document.getElementById("windSpeed").innerHTML = "Wind speed: " + weather.wind.speed + " m/s";
+    document.getElementById("windDegrees").innerHTML = "Wind direction: " + weather.wind.deg + "°";
+
+    document.getElementById("cloudCover").innerHTML = "Cloud cover: " + weather.clouds.all + " %";
+  }
+};
+xmlhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?id=2620141&units=metric&appid=4b05e8a2581714c237716a9502fe0d24&lang=da", true);
+xmlhttp.send();
+</script>
+
+
+</body>
+</html>
