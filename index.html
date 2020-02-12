@@ -18,7 +18,7 @@
       <!-- Custom styles for this template -->
       <link href="cover.css?version=4" rel="stylesheet">
    </head>
-   <body class="text-center" onLoad="initClock()">
+   <body class="text-center" onLoad="init()">
       <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
          <div class="mb-auto"></div>
          <main role="main" class="inner cover">
@@ -31,10 +31,20 @@
                <a id="h">12</a> :
                <a id="m">00</a>
             </div>
-            <a class="weatherwidget-io" href="https://forecast7.com/da/55d7111d72/holbaek/" data-label_1="HOLBÆK" data-label_2="Danmark" data-font="Helvetica" data-mode="Current" data-days="5" data-theme="dark" data-basecolor="rgba(0, 0, 0, 0)" >HOLBÆK Danmark</a>
-            <script>
-               !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-            </script>
+            <h4>Current weather conditions</h4>
+            <div class="weather">
+               <p id="cityName"></p>
+
+               <p id="currentTemp"></p>
+               <p id="currentTempFeelsLike"></p>
+               <p id="pressure"></p>
+               <p id="humidity"></p>
+
+               <p id="windSpeed"></p>
+               <p id="windDegrees"></p>
+
+               <p id="cloudCover"></p>
+            </div>
             <div class="search">
                <form method="get" action="https://duckduckgo.com/">
                   <input size="40" name="q" placeholder="Search with DuckDuckGo">

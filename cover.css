@@ -75,11 +75,15 @@ button, input, optgroup, select, textarea {
   font-size: 20px;
   margin-bottom: 50px;
 }
-.weatherwidget-io {
+.weather {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
-  width: 40%;
+  width: 400px;
+  background-color: cadetblue;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Product Sans1', sans-serif;
 }
 
 @media only screen and (max-width: 768px) {
