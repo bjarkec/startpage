@@ -24,6 +24,7 @@ function updateDate() {
 		document.getElementById(tagsdate[i]).firstChild.nodeValue = corrdate[i];
 }
 
+
 function updateWeather() {
 	var xmlhttp = new XMLHttpRequest(); // Defines the XMLHttpRequest variable
 	xmlhttp.onreadystatechange = function () {
@@ -40,6 +41,10 @@ function updateWeather() {
 			document.getElementById("windDegrees").innerHTML = "Wind direction: " + weather.wind.deg + "°"; // Gets the current wind direction
 
 			document.getElementById("cloudCover").innerHTML = "Cloud cover: " + weather.clouds.all + " %"; // Gets the current cloudcover
+
+			var weatherDate = new Date(23779623);
+
+			document.getElementById("sunrise").innerHTML = "Cloud cover: " + weatherDate + " %"; // Gets the current cloudcover
 		}
 	};
 	xmlhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?id=2620141&units=metric&appid=4b05e8a2581714c237716a9502fe0d24&lang=da", true);
@@ -50,6 +55,7 @@ function init() { // Runs at initialisation of the website
 	updateDate(); // Updates the date
 	updateClock(); // Updates the clock
 	updateWeather(); // Updates the weather
+	updateWeatherDate();
 	window.setInterval("updateClock()", 1000); // Updates the clock every second
 	window.setInterval("updateWeather()", 600000); // Updates the weather every 10 minutes
 }
