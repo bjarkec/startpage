@@ -1,5 +1,2 @@
 TODO:
 
-Add leading zeros to sunrise and sunset times + recieved time
-
-Change size of visual representation of current weather conditions
