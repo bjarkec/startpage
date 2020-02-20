@@ -26,11 +26,28 @@ function updateDate() {
 
 
 function updateWeather() {
-	var xmlhttp = new XMLHttpRequest(); // Defines the XMLHttpRequest variable
+	var xmlhttp = new XMLHttpRequest();
 	xmlhttp.onreadystatechange = function () {
 		if (this.readyState == 4 && this.status == 200) {
 			var weather = JSON.parse(this.responseText);
+
+			var recievedTime = weather.dt * 1000;
+
+			var recievedDate = new Date();
+
+			recievedDate.setTime(recievedTime);
+
+			document.getElementById("recievedTime").innerHTML = "Recieved: " + recievedDate.getHours() + "." + recievedDate.getMinutes(); // Gets the time of the recieved weather report
+
 			document.getElementById("cityName").innerHTML = weather.name; // Gets the name of the city
+
+			var weatherIcon = weather.weather[0].icon;
+			
+			var weatherIconPicture = "icons/weathericons/" + weatherIcon + ".png";
+
+			document.getElementById("weatherIcon").src = weatherIconPicture;
+
+			document.getElementById("weatherDescription").innerHTML = weather.weather[0].main;
 
 			document.getElementById("currentTemp").innerHTML = "Current temperature: " + weather.main.temp + " °C"; // Gets the current temperature
 			document.getElementById("currentTempFeelsLike").innerHTML = "Feels like: " + weather.main.feels_like + " °C"; // Gets the current feels like temperature
@@ -42,9 +59,21 @@ function updateWeather() {
 
 			document.getElementById("cloudCover").innerHTML = "Cloud cover: " + weather.clouds.all + " %"; // Gets the current cloudcover
 
-			var weatherDate = new Date(23779623);
+			var sunriseTime = weather.sys.sunrise * 1000;
 
-			document.getElementById("sunrise").innerHTML = "Cloud cover: " + weatherDate + " %"; // Gets the current cloudcover
+			var sunriseDate = new Date();
+
+			sunriseDate.setTime(sunriseTime);
+
+			document.getElementById("sunrise").innerHTML = "Sunrise: " + sunriseDate.getHours() + "." + sunriseDate.getMinutes() + "." + sunriseDate.getSeconds(); // Gets the time of sunrise
+
+			var sunsetTime = weather.sys.sunset * 1000;
+
+			var sunsetDate = new Date();
+
+			sunsetDate.setTime(sunsetTime);
+
+			document.getElementById("sunset").innerHTML = "Sunset: " + sunsetDate.getHours() + "." + sunsetDate.getMinutes() + "." + sunsetDate.getSeconds(); // Gets the time of sunset
 		}
 	};
 	xmlhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?id=2620141&units=metric&appid=4b05e8a2581714c237716a9502fe0d24&lang=da", true);
@@ -55,7 +84,6 @@ function init() { // Runs at initialisation of the website
 	updateDate(); // Updates the date
 	updateClock(); // Updates the clock
 	updateWeather(); // Updates the weather
-	updateWeatherDate();
 	window.setInterval("updateClock()", 1000); // Updates the clock every second
 	window.setInterval("updateWeather()", 600000); // Updates the weather every 10 minutes
 }

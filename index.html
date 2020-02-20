@@ -31,9 +31,16 @@
                <a id="h">12</a> :
                <a id="m">00</a>
             </div>
-            <h4>Current weather conditions</h4>
+            <div class="search">
+               <form method="get" action="https://duckduckgo.com/">
+                  <input size="40" name="q" placeholder="Search with DuckDuckGo">
+               </form>
+            </div>
+            <h4>Current weather conditions</h4><p id="recievedTime"></p>
             <div class="weather">
                <p id="cityName"></p>
+               <p id="weatherDescription"></p>
+               <img id="weatherIcon">
 
                <p id="currentTemp"></p>
                <p id="currentTempFeelsLike"></p>
@@ -48,11 +55,7 @@
                <p id="cloudCover"></p>
                
                <p id="sunrise"></p>
-            </div>
-            <div class="search">
-               <form method="get" action="https://duckduckgo.com/">
-                  <input size="40" name="q" placeholder="Search with DuckDuckGo">
-               </form>
+               <p id="sunset"></p>
             </div>
             <div class="quicklinks">
                <div class="daily col-lg-3 col-md-3 col-6">
