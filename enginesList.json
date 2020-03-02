@@ -1,0 +1,6 @@
+{
+    "search": "https://duckduckgo.com/?q",
+    "!yt": "https://www.youtube.com/results?search_query=",
+    "!sc": "https://soundcloud.com/search?q=",
+    "!r": "https://reddit.com/r/"
+}
