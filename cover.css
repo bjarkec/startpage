@@ -89,7 +89,7 @@ textarea {
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
-	height: 266px;
+	height: 228px;
 	background-color: cornflowerblue;
 	color: black;
 	font-size: 15px;
@@ -108,11 +108,11 @@ textarea {
 }
 
 #currentTemp {
-	font-size: 25px;
+	font-size: 15px;
 }
 
 #currentTempFeelsLike {
-	font-size: 25px;
+	font-size: 15px;
 }
 
 .weatherextended {

@@ -53,9 +53,46 @@ function updateWeather() {
 			document.getElementById("currentTempFeelsLike").innerHTML = "Feels like: " + weather.main.feels_like + " °C"; // Gets the current feels like temperature
 			document.getElementById("pressure").innerHTML = "Pressure: " + weather.main.pressure + " hPa"; // Gets the current pressure
 			document.getElementById("humidity").innerHTML = "Humidity: " + weather.main.humidity + " %"; // Gets the current humidity
+			
+			var windDeg = weather.wind.deg;
 
-			document.getElementById("windSpeed").innerHTML = "Wind speed: " + weather.wind.speed + " m/s"; // Gets the current wind speed
-			document.getElementById("windDegrees").innerHTML = "Wind direction: " + weather.wind.deg + "°"; // Gets the current wind direction
+			var windDirection;
+
+			if (windDeg > 349 || windDeg <= 11) {
+				windDirection = "N";
+			} else if (windDeg > 11 && windDeg <= 34) {
+				windDirection = "NNE";
+			} else if (windDeg > 34 && windDeg <= 56) {
+				windDirection = "NE";
+			} else if (windDeg > 56 && windDeg <= 79) {
+				windDirection = "ENE";
+			} else if (windDeg > 79 && windDeg <= 101) {
+				windDirection = "E";
+			} else if (windDeg > 101 && windDeg <= 124) {
+				windDirection = "ESE";
+			} else if (windDeg > 124 && windDeg <= 146) {
+				windDirection = "SE";
+			} else if (windDeg > 146 && windDeg <= 169) {
+				windDirection = "SSE";
+			} else if (windDeg > 169 && windDeg <= 191) {
+				windDirection = "S";
+			} else if (windDeg > 191 && windDeg <= 214) {
+				windDirection = "SSW";
+			} else if (windDeg > 214 && windDeg <= 236) {
+				windDirection = "SW";
+			} else if (windDeg > 236 && windDeg <= 259) {
+				windDirection = "WSW";
+			} else if (windDeg > 259 && windDeg <= 281) {
+				windDirection = "W";
+			} else if (windDeg > 281 && windDeg <= 304) {
+				windDirection = "WNW";
+			} else if (windDeg > 304 && windDeg <= 326) {
+				windDirection = "NW";
+			} else if (windDeg > 326 && windDeg <= 349) {
+				windDirection = "NNW";
+			}
+
+			document.getElementById("wind").innerHTML = "Wind: " + windDirection + " at " + weather.wind.speed + " m/s"; // Gets the current wind speed and wind direction
 
 			document.getElementById("cloudCover").innerHTML = "Cloud cover: " + weather.clouds.all + " %"; // Gets the current cloudcover
 
