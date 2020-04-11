@@ -68,11 +68,11 @@ body {
 }
 
 .cover-container {
-	width: 82em;
+	width: 100%;
 }
 
 .quicklinks {
-	width: 100%;
+	width: 50%;
 	margin: auto 0;
 }
 
@@ -211,6 +211,7 @@ button {
 
 .quicklinks {
 	float: left;
+	width: 100%;
 }
 
 .link img {
@@ -221,12 +222,14 @@ button {
 	line-height: 1.85rem;
 }
 
-.daily,
-.streaming,
-.custom,
-.creative {
+.entertainment,
+.music,
+.reddit,
+.social-media,
+.workout {
 	float: left;
 	margin-bottom: 40px;
+	width: 20%;
 }
 
 .link {
