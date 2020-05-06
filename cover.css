@@ -89,7 +89,7 @@ textarea {
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
-	height: 228px;
+	height: 231px;
 	background-color: cornflowerblue;
 	color: black;
 	font-size: 15px;
@@ -241,7 +241,6 @@ button {
 	text-decoration: none;
 	display: flex;
 	position: relative;
-	line-height: 2.1rem;
 	margin-bottom: 15px;
 	float: left;
 	font-size: 0.9rem;
