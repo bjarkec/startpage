@@ -102,7 +102,9 @@ function updateWeather() {
 
 			sunriseDate.setTime(sunriseTime);
 
-			document.getElementById("sunrise").innerHTML = "Sunrise: " + sunriseDate.getHours().pad(2) + "." + sunriseDate.getMinutes().pad(2) + "." + sunriseDate.getSeconds().pad(2); // Gets the time of sunrise
+			var sunriseHours = sunriseDate.getHours() + 2;
+
+			document.getElementById("sunrise").innerHTML = "Sunrise: " + sunriseHours.pad(2) + "." + sunriseDate.getMinutes().pad(2) + "." + sunriseDate.getSeconds().pad(2); // Gets the time of sunrise
 
 			var sunsetTime = weather.sys.sunset * 1000;
 
@@ -110,7 +112,9 @@ function updateWeather() {
 
 			sunsetDate.setTime(sunsetTime);
 
-			document.getElementById("sunset").innerHTML = "Sunset: " + sunsetDate.getHours().pad(2) + "." + sunsetDate.getMinutes().pad(2) + "." + sunsetDate.getSeconds().pad(2); // Gets the time of sunset
+			var sunsetHours = sunsetDate.getHours() + 2;
+
+			document.getElementById("sunset").innerHTML = "Sunset: " + sunsetHours.pad(2) + "." + sunsetDate.getMinutes().pad(2) + "." + sunsetDate.getSeconds().pad(2); // Gets the time of sunset
 		}
 	};
 	xmlhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?id=2620141&units=metric&appid=4b05e8a2581714c237716a9502fe0d24&lang=da", true);
