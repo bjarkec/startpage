@@ -5,8 +5,8 @@ Number.prototype.pad = function (n) {
 
 function updateClock() {
 	var now = new Date(); // Creating a variable called "now" and assigning it to the current time
-	var min = now.getMinutes() // Assigning the variable "min" to the current minutes
-	var hou = now.getHours(); // Assigning the variable "hou" to the current hours
+	var min = now.getMinutes(); // Assigning the variable "min" to the current minutes
+	var hou = now.getHours() + 2; // Assigning the variable "hou" to the current hours
 	var tags = ["h", "m"]; // Defining the tags that will be shown on screen
 	var corr = [hou.pad(2), min.pad(2)];
 	for (var i = 0; i < tags.length; i++)
@@ -37,7 +37,9 @@ function updateWeather() {
 
 			recievedDate.setTime(recievedTime);
 
-			document.getElementById("recievedTime").innerHTML = "Data recieved: " + recievedDate.getHours().pad(2) + "." + recievedDate.getMinutes().pad(2); // Gets the time of the recieved weather report
+			var recievedHours = recievedDate.getHours() + 2;
+
+			document.getElementById("recievedTime").innerHTML = "Data recieved: " + recievedHours.pad(2) + "." + recievedDate.getMinutes().pad(2); // Gets the time of the recieved weather report
 
 			document.getElementById("cityName").innerHTML = weather.name; // Gets the name of the city
 
